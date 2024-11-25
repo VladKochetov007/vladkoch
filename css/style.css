@@ -144,7 +144,9 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap;
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .social-link {
@@ -282,5 +284,28 @@ footer {
     .profile-image {
         width: 200px;
         height: 200px;
+    }
+}
+
+/* GitHub Activity */
+.github-activity {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.github-activity h3 {
+    margin-bottom: 1.5rem;
+}
+
+.github-stats {
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .github-stats {
+        width: 100%;
     }
 }
