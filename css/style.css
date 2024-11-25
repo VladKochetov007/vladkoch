@@ -102,11 +102,13 @@ h2 {
 }
 
 .skill-category {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.15);
     padding: 1.5rem;
     border-radius: 10px;
     backdrop-filter: blur(5px);
     text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .skill-category h4 {
@@ -121,10 +123,12 @@ h2 {
 }
 
 .project-card {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.15);
     padding: 2rem;
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-link {
@@ -321,4 +325,16 @@ footer {
     margin: 0 auto;
     line-height: 1.8;
     text-align: center;
+}
+
+/* Skills */
+@media (max-width: 768px) {
+    .skill-category, .project-card {
+        margin-bottom: 1.5rem;
+        background: rgba(255, 255, 255, 0.18);
+    }
+    
+    .skill-category:last-child, .project-card:last-child {
+        margin-bottom: 0;
+    }
 }
