@@ -343,12 +343,17 @@ footer {
     margin: 1rem 0;
     border-radius: 8px;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .project-image img {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-height: 20vh;
+    max-width: 100%;
     display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 .project-links {
@@ -360,4 +365,25 @@ footer {
 .project-links .project-link {
     flex: 1;
     text-align: center;
+}
+
+/* Дополнительно обеспечим правильное поведение на мобильных устройствах */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .project-image {
+        margin: 0.5rem 0;
+    }
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
 }
