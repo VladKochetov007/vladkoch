@@ -120,6 +120,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    align-items: stretch;
 }
 
 .project-card {
@@ -129,6 +130,9 @@ h2 {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-link {
@@ -140,6 +144,8 @@ h2 {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: all 0.3s;
+    text-align: center;
+    width: 100%;
 }
 
 .project-link:hover {
@@ -340,10 +346,12 @@ footer {
 }
 
 .project-image {
-    margin: 1rem 0;
-    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .project-image img {
@@ -359,7 +367,7 @@ footer {
 .project-links {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
 .project-links .project-link {
@@ -378,12 +386,4 @@ footer {
     .project-image {
         margin: 0.5rem 0;
     }
-}
-
-.project-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
 }
