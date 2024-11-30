@@ -1,3 +1,2 @@
 Algorithmic Trading
 Ernest P. Chan
-Excellent book with common algorithms. Gives a good understanding of quantitative trading

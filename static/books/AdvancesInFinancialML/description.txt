@@ -1,3 +1,2 @@
 Advances in Financial Machine Learning
 Marcos Lopez de Prado
-A good book to understand the basics of machine learning in trading

@@ -1,0 +1,28 @@
+{
+    "books": [
+        {
+            "title": "Advances in Financial Machine Learning",
+            "author": "Marcos López de Prado",
+            "folder": "AdvancesInFinancialML",
+            "opinion": "A comprehensive guide to applying machine learning techniques to financial markets."
+        },
+        {
+            "title": "Algorithmic Trading: Winning Strategies and Their Rationale",
+            "author": "Ernest P. Chan",
+            "folder": "AlgoTradingChan",
+            "opinion": "An excellent book for understanding the basics of algorithmic trading and developing your own strategies."
+        },
+        {
+            "title": "Inside the Black Box: A Simple Guide to Quantitative and High Frequency Trading",
+            "author": "Rishi K. Narang",
+            "folder": "InBlackBox",
+            "opinion": "A great introduction to the world of quantitative and high-frequency trading."
+        },
+        {
+            "title": "The Bible of Options Strategies",
+            "author": "Guy Cohen",
+            "folder": "Options",
+            "opinion": "A must-read for anyone interested in derivatives markets and financial engineering."
+        }
+]
+}

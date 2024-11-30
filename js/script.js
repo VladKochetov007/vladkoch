@@ -18,31 +18,31 @@ async function loadBooks() {
             console.error('Books container not found');
             return;
         }
-        
-        console.log('Fetching book description...');
-        const descResponse = await fetch('static/books/AdvancesInFinancialML/description.txt');
-        if (!descResponse.ok) {
-            throw new Error(`HTTP error! status: ${descResponse.status}`);
+
+        console.log('Fetching books data...');
+        const booksResponse = await fetch('static/books/books.json');
+        if (!booksResponse.ok) {
+            throw new Error(`HTTP error! status: ${booksResponse.status}`);
         }
+
+        const data = await booksResponse.json();
+        const books = data.books;
         
-        const description = await descResponse.text();
-        const lines = description.split('\n').map(line => line.trim()).filter(line => line);
-        const [title, author, ...opinionLines] = lines;
-        const opinion = opinionLines.join('\n');
-        
-        console.log('Creating book element with:', { title, author, opinion });
-        const bookElement = document.createElement('div');
-        bookElement.className = 'project-card';
-        bookElement.innerHTML = `
-            <h3>${title}</h3>
-            <p class="book-author">by ${author}</p>
-            <div class="project-image">
-                <img src="static/books/AdvancesInFinancialML/cover.png" alt="${title} Cover">
-            </div>
-            <p class="book-opinion">${opinion}</p>
-        `;
-        booksContainer.appendChild(bookElement);
-        console.log('Book element added to container');
+        for (const book of books) {
+            console.log('Creating book element:', book);
+            const bookElement = document.createElement('div');
+            bookElement.className = 'project-card';
+            bookElement.innerHTML = `
+                <h3>${book.title}</h3>
+                <p class="book-author">by ${book.author}</p>
+                <div class="project-image">
+                    <img src="static/books/${book.folder}/cover.png" alt="${book.title} Cover">
+                </div>
+                <p class="book-opinion">${book.opinion}</p>
+            `;
+            booksContainer.appendChild(bookElement);
+        }
+        console.log('All books added to container');
     } catch (error) {
         console.error('Error loading books:', error);
         const booksContainer = document.getElementById('books-container');
