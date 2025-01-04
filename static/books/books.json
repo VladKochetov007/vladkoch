@@ -23,6 +23,12 @@
             "author": "Guy Cohen",
             "folder": "Options",
             "opinion": "A must-read for anyone interested in derivatives markets and financial engineering."
+        },
+        {
+            "title": "Finding Alphas: A Quantitative Approach to Building Trading Strategies",
+            "author": "Igor Tulchinsky",
+            "folder": "Alphas",
+            "opinion": "Great book for alpha research"
         }
-]
+    ]
 }
