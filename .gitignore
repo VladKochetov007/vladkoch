@@ -1,0 +1,45 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# script garbage
+fix_git.js
+fix_git.py
+commit.js
+exec_cleanup.js
+git_cleanup_output.txt
+fix_git.py
+commit.js
+git_cleanup_output.txt
+exec_cleanup.js
+git_log_output.txt

@@ -22,13 +22,19 @@
             "title": "The Bible of Options Strategies",
             "author": "Guy Cohen",
             "folder": "Options",
-            "opinion": "A must-read for anyone interested in derivatives markets and financial engineering."
+            "opinion": "A must-read for anyone interested in derivatives markets"
         },
         {
             "title": "Finding Alphas: A Quantitative Approach to Building Trading Strategies",
             "author": "Igor Tulchinsky",
             "folder": "Alphas",
-            "opinion": "Great book for alpha research"
+            "opinion": "Great book to form mental model for alpha research."
+        },
+        {
+            "title": "Professional Automated Trading: Theory and Practice",
+            "author": "Eugene A. Durenard",
+            "folder": "ProfessionalAutomatedTrading",
+            "opinion": "Mental model and basic techniques for both high- and lower frequency trading systems"
         }
     ]
 }
