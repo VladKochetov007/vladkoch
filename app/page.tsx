@@ -318,17 +318,15 @@ function About() {
                         {/* Subtle accent */}
                         <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-emerald-500 via-blue-500 to-transparent" />
                         <p className="text-lg md:text-xl leading-[1.9] text-muted-foreground font-light text-center">
-                            Quantitative Developer and Researcher with a passion for exploring
-                            academic literature, implementing{" "}
+                            Quantitative researcher and developer focused on{" "}
                             <span className="text-foreground font-medium">
-                                cutting-edge methodologies
+                                systematic trading and market structure
                             </span>
-                            , and solving complex, non-trivial problems. Experienced in{" "}
+                            . Experienced in building{" "}
                             <span className="gradient-text-green font-semibold">
-                                machine learning engineering
+                                execution systems, simulation environments, and machine learning pipelines
                             </span>{" "}
-                            and deep learning techniques with a strong foundation in
-                            mathematical concepts.
+                            for data-driven strategy development.
                         </p>
                     </div>
                 </RevealSection>
@@ -531,7 +529,7 @@ function Footer() {
                     Vlad Koch
                 </span>
                 <p className="text-muted-foreground text-sm">
-                    © 2024 Vlad Kochetov · Licensed under GPL 3.0
+                    © 2024-2026 Vlad Kochetov · Licensed under GPL 3.0
                 </p>
                 <div className="flex gap-4">
                     {socials.map((s) => (
