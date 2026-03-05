@@ -67,6 +67,14 @@ const projects = [
         repo: "https://github.com/quick-trade/quick_trade",
         img: "https://raw.githubusercontent.com/quick-trade/quick_trade/main/img/plot.png",
     },
+    {
+        name: "Exchange Simulation",
+        tagline: "Market Microstructure Simulation Engine",
+        description:
+            "Actor-based exchange simulation with a full order book, Price-Time & Pro-Rata matching engines, and realistic mechanics: mark price, liquidations, insurance fund, and circuit breakers.",
+        repo: "https://github.com/VladKochetov007/ExchangeSimulation",
+        img: "https://raw.githubusercontent.com/VladKochetov007/ExchangeSimulation/refs/heads/main/static/architecture.png",
+    },
 ];
 
 const socials = [
