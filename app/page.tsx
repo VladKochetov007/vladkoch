@@ -27,6 +27,14 @@ interface Book {
 // ── Data ──────────────────────────────────────────────────────────────────────
 const projects = [
     {
+        name: "Exchange Simulation",
+        tagline: "Market Microstructure Simulation Engine",
+        description:
+            "Actor-based exchange simulation with a full order book, Price-Time & Pro-Rata matching engines, and realistic mechanics: mark price, liquidations, insurance fund, and circuit breakers.",
+        repo: "https://github.com/VladKochetov007/ExchangeSimulation",
+        img: "https://raw.githubusercontent.com/VladKochetov007/ExchangeSimulation/refs/heads/main/static/architecture.png",
+    },
+    {
         name: "MLTT",
         tagline: "Machine Learning Trading Toolkit",
         description:
@@ -66,14 +74,6 @@ const projects = [
             "Algorithmic trading library for implementing strategies and optimization.",
         repo: "https://github.com/quick-trade/quick_trade",
         img: "https://raw.githubusercontent.com/quick-trade/quick_trade/main/img/plot.png",
-    },
-    {
-        name: "Exchange Simulation",
-        tagline: "Market Microstructure Simulation Engine",
-        description:
-            "Actor-based exchange simulation with a full order book, Price-Time & Pro-Rata matching engines, and realistic mechanics: mark price, liquidations, insurance fund, and circuit breakers.",
-        repo: "https://github.com/VladKochetov007/ExchangeSimulation",
-        img: "https://raw.githubusercontent.com/VladKochetov007/ExchangeSimulation/refs/heads/main/static/architecture.png",
     },
 ];
 
@@ -164,12 +164,6 @@ function Navbar() {
             )}
         >
             <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-                <a
-                    href="#hero"
-                    className="font-display font-bold text-xl tracking-tight gradient-text-green"
-                >
-                    Vlad Koch
-                </a>
                 <div className="hidden md:flex items-center gap-8">
                     {["About", "Projects", "Books", "Social"].map((item) => (
                         <a
@@ -228,8 +222,7 @@ function Hero() {
                             transition={{ duration: 0.7, delay: 0.3 }}
                             className="font-display text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-[1.1] mb-4"
                         >
-                            Vlad{" "}
-                            <span className="gradient-text">Kochetov</span>
+                            Vlad Kochetov
                         </motion.h1>
 
                         <motion.p
@@ -281,8 +274,6 @@ function Hero() {
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                         className="relative flex-shrink-0"
                     >
-                        {/* Glow ring */}
-                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500 blur-xl opacity-40 scale-110 animate-pulse" />
                         {/* Rotating border */}
                         <div className="absolute inset-0 rounded-full border-2 border-dashed border-emerald-500/30 animate-[spin_20s_linear_infinite]" />
                         <div className="relative w-52 h-52 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-background shadow-2xl">
@@ -533,9 +524,6 @@ function Footer() {
     return (
         <footer className="py-10 border-t border-border">
             <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                <span className="font-display font-bold gradient-text-green">
-                    Vlad Koch
-                </span>
                 <p className="text-muted-foreground text-sm">
                     © 2024-2026 Vlad Kochetov · Licensed under GPL 3.0
                 </p>
