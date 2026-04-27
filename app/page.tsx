@@ -27,12 +27,28 @@ interface Book {
 // ── Data ──────────────────────────────────────────────────────────────────────
 const projects = [
     {
+        name: "FPGAEnv",
+        tagline: "RLVR Environments for Verilog Synthesis",
+        description:
+            "GRPO environment for training LLMs to write synthesizable Verilog, graded via Verilator simulation. Parameter-free scoring based on clock-cycle ratio to handwritten references. Reward hacking prevented through per-episode randomized vectors, Verilog syscall guard, and sandboxed execution.",
+        repo: "https://github.com/VladKochetov007/FPGAEnv",
+        img: "/images/xilinx_robot.png",
+    },
+    {
         name: "Exchange Simulation",
         tagline: "Market Microstructure Simulation Engine",
         description:
             "Actor-based exchange simulation with a full order book, Price-Time & Pro-Rata matching engines, and realistic mechanics: mark price, liquidations, insurance fund, and circuit breakers.",
         repo: "https://github.com/VladKochetov007/ExchangeSimulation",
         img: "https://raw.githubusercontent.com/VladKochetov007/ExchangeSimulation/refs/heads/main/static/architecture.png",
+    },
+    {
+        name: "HWAgent",
+        tagline: "Homework Solving Agent",
+        description:
+            "First hands-on experience building agents. Built on top of smolagents when cheap LLMs still struggled with complex math reasoning. LLM output goes to executable Python parsing, code execution loop, result verification, step-by-step LaTeX solutions, automated matplotlib plots, and PDF export. Goal: guaranteed correctness instead of hallucinations.",
+        repo: "https://github.com/VladKochetov007/HWAgent",
+        img: "/images/HWAgent.png",
     },
     {
         name: "MLTT",
